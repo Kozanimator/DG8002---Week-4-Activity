@@ -36,6 +36,6 @@
 # MONTHLY DEPOSIT: $100
 #
 # Number of Months: 177
-# Number of Years: 14.75
+# Number of Years: 87.75
 # Total Investment: $1,034,906.36
 
