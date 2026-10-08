@@ -27,12 +27,12 @@ current_balance = base_investment
 monthly_interest_rate = annual_interest_rate / 100 / 12
 
 # TODO 3: Create a loop that will run until you have made at least your desired savings goal
-if savings_goal <= 0 or base_investment < 0 or annual_interest_rate < 0 or monthly_deposit < 0
+if savings_goal <= 0 or base_investment < 0 or annual_interest_rate < 0 or monthly_deposit < 0:
     print("Enter a positive savings goal and non-negative investment, rate, and deposit.")
-elif current_balance < savings_goal and monthly_deposit == 0 and (annual_interest_rate == 0 or base_investment == 0)
+elif current_balance < savings_goal and monthly_deposit == 0 and ( annual_interest_rate == 0 or base_investment == 0):
     print("The goal cannot be reached without a deposit or an investment earning interest.")
-else
-    while current_balance < savings_goal
+else:
+    while current_balance < savings_goal:
 
     # TODO 4: Calculate amount of money earned that month through interest on your base investment and monthly deposit
    current_balance += monthly_deposit
@@ -44,10 +44,10 @@ else
 
 # TODO 6:  Print how long it will take for your investment to mature.  
 #          If the duration is longer than 12 months, print your result in years.  Otherwise, print the result in months.
- if months > 12
+ if months > 12:
         years = months / 12
         print(f"Time to reach your goal: {years:.2f} years ({months} months)")
-    else
+ else:
         print(f"Time to reach your goal: {months} months")
     print(f"Final balance: ${current_balance:,.2f}")
 
