@@ -35,9 +35,9 @@ else:
     while current_balance < savings_goal:
 
     # TODO 4: Calculate amount of money earned that month through interest on your base investment and monthly deposit
-   current_balance += monthly_deposit
-   monthly_interest = current_balance * monthly_interest_rate
-   current_balance += monthly_interest
+    monthly_interest = current_balance * monthly_interest_rate
+    current_balance += monthly_interest
+    current_balance += monthly_deposit
 
     # TODO 5: Increment the number of times the loop has run so you can track how many months it takes to hit your goal
     months += 1
@@ -57,7 +57,7 @@ else:
 # BASE: $1,000
 # MONTHLY DEPOSIT: $100
 #
-# Number of Months: 177
-# Number of Years: 87.75
-# Total Investment: $1,034,906.36
-
+# Time to reach your goal: 87.75 years (1053 months)
+# Final balance: $1,000,861.53
+# These figures match the professor's correction: interest is calculated
+# before each month's deposit is added.
